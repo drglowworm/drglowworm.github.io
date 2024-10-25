@@ -1,0 +1,11 @@
+#two-col {
+display: grid;
+grid-template-columns: 3fr 1fr;
+column-gap: 80px;
+}
+img{
+    width: 100%; object-fit: cover;
+}
+body{
+    margin: 20px;
+}
