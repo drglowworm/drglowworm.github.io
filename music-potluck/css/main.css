@@ -9,3 +9,9 @@ img{
 body{
     margin: 20px;
 }
+.h1 {
+    font-family: "Digistick"
+}
+body{
+    background-color: rgb(104, 160, 238);
+}
