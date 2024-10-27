@@ -13,5 +13,21 @@ body{
     font-family: "Digistick"
 }
 body{
-    background-color: rgb(104, 160, 238);
+    background-color: rgb(102, 108, 235);
 }
+/* Start https://www.cursors-4u.com */ 
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
+ /* End https://www.cursors-4u.com */
+ :root {
+    font-family: "Rabbid highway sign II";
+}
+body {
+    color: rgb(255, 255, 255);
+  }
+header{
+    background-color: darkmagenta;
+  }
+  img{
+    border-radius: 30px;
+  }
+  
