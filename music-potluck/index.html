@@ -14,91 +14,152 @@
         />
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-        <div class="header">
-            <h1 class="h1" style="color: rgb(250, 233, 238);"> Max's Music Zone </h1>
-            <p> test 1 2 </p>
+    <body class="body">
+        <!this is the header>
+        <div class="header" id="myheader" style="text-align: center;">
+            <h1 class="h1"> Max's Music Zone </h1>
+            <p><strong> Home of sweet tunes and groovy vibes</strong></p>
         </div>
-        <div id="two-col"> 
-            <div style="text-align: center;">
-                <img 
-                    src="images/dumb dumb.jpg" 
-                    width="500" 
-                    alt="A white cassete on a background of paper clouds, star stickers, and a rainbow"
-                >
-                <h3><strong> dumb dumb</strong> ~ mazie <em>2:05</em> </h3>
-                <img src="images/playbar.png" width="300" alt="an active playbar for audio">
-            </div>
-            <div>
-                <p> 
-                    <img src="images/lemonade.jpeg" width="80" alt="a deserted lemonade stand">
-                    <strong> Unsweetened Lemonade</strong> Amélie Farren <em>2:24</em>
-                </p>
-                <p>
-                    <img src="images/illinoise.jpeg" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
-                    <strong> Chicago</strong> Sufjan Stevens <em>6:04</em>
-                </p>
-                <p>
-                    <img src="images/rock in gods shoe.jpeg" width="80" alt="The earth in a brown oxford shoe">
-                    <strong> Rocks in God's Shoe</strong> Sushi Soucy <em>2:44</em>
-                </p>
-                <p>
-                    <img src="images/limitations.jpg" width="80" alt="An open blue matchbook">
-                    <strong> Limitations</strong> Andre Van Drunen <em>2:49</em>
-                </p>
-            </div>
-        </div>
-        <img src="images/fishy div.webp">
-        <div id="two-col">
-            <div style="text-align: center;">
-                <img src="images/alex lasarenko.jpeg" width="300" alt="The silhouette of a piano, a bass, and a conductors arm, labelled 'ORCHESTRAL GROOVES'">
-                <h3><strong> Unhinged</strong> ~ Alexander Lasarenko <em>5:11</em> </h3>
-                <img src="images/playbar.png">
-            </div>
-            <div>
-                <p> 
-                    <img src="images/song of the sea.jpg" width="80" alt="An illustrative cover for 'Song of the Sea', featuring a selkie, her brother, and their dog.">
-                    <strong> Run</strong> Bruno Coulais <em>2:32</em>
-                </p>
-                <p>
-                    <img src="images/Traindragon.jpg" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
-                    <strong> New Tail</strong> John Powell <em>2:48</em>
-                </p>
-                <p>
-                    <img src="images/undone.jpg" width="80" alt="The earth in a brown oxford shoe">
-                    <strong> Caught in a Weird Loop</strong> Amie Doherty <em>1:25</em>
-                </p>
-                <p>
-                    <img src="images/alhambra.jpeg" width="80" alt="An open blue matchbook">
-                    <strong> Waltz</strong> Mother Falcon <em>3:01</em>
-                </p>
-            </div>
-        </div>
-            <img src="images/fishy div.webp">
-            <div id="two-col">
-                <div style="text-align: center;">
-                    <img src="images/copacabana.jpg" width="300" alt="The silhouette of a piano, a bass, and a conductors arm, labelled 'ORCHESTRAL GROOVES'">
-                    <h3><strong> Copacabana</strong> ~ Barry Manilow <em>3:56</em> </h3>
-                    <img src="images/playbar.png">
+        <!all of the body is in here>
+        <div class="maincontainer" style="text-align: center;" id="three-col">
+           <!nav bar>
+            <div class="navbar">
+            <h2 class="h1">Navigation</h2>
+            <a href="#poprocks" class="imgtxt">
+                <img src="images/cd purp.jpg" alt="">
+                <span>poprocks</span>
+              </a>
+              <br>
+              <img src="images/silly blingee.webp" alt="born to be silly">
+              <br>
+              <a href="#muzak" class="imgtxt">
+                <img src="images/cd yellow.jpg" alt="">
+                <span>muzak</span>
+              </a>
+              <br>
+              <img src="images/cd blingee.webp">
+              <br>
+              <a href="#nova" class="imgtxt">
+                <img src="images/ccd gray.jpg" alt="">
+                <span>nova</span>
+              </a>
+              <br>
+              <img src="images/paint blingee.webp">
+              <a href="https://open.spotify.com/playlist/0FHr2VSmO3NFz8G3cUwJJp?si=POIWrLKJSAefOcgFIS6VXw" class="imgtxt">
+                <img src="images/pink cd.jpg" alt="cupcake">
+                <span>spotify</span>
+              </a>
+              <img src="images/chatty comp.webp">
+              <img src="images/cringe is dead.webp">
+              <img src="images/pigeno.webp">
+              <img src="images/glow blingee.webp">
+              <img src="images/old web stamp.png">
+              <img src="images/bunbury.webp">
+              <img src="images/optimist blingee.webp">
+              <img src="images/squids stamp.png">
+              <img src="images/werm.webp">
+              <img src="images/sorry blingee.webp">
+              <img src="images/cupcake.jpg">
+              
+            
+           </div>
+           
+           <!playlist container>
+           <div> 
+                <!playlist poppy>
+                <div id="two-col"> 
+                    <div style="text-align: center;">
+                        <img 
+                            src="images/dumb dumb.jpg" 
+                            width="500" 
+                            alt="A white cassete on a background of paper clouds, star stickers, and a rainbow"
+                            id="poprocks"
+                        >
+                        <h3><strong> dumb dumb</strong> ~ mazie <em>2:05</em> </h3>
+                        <audio controls>
+                            <source src="images/mazie - dumb dumb (official video).mp3" type="audio/mp3">
+                    
+                          </audio> 
+                    </div>
+                    <div>
+                        <p> 
+                            <img src="images/lemonade.jpeg" width="80" alt="a deserted lemonade stand">
+                            <strong> Unsweetened Lemonade</strong> Amélie Farren <em>2:24</em>
+                        </p>
+                        <p>
+                            <img src="images/illinoise.jpeg" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
+                            <strong> Chicago</strong> Sufjan Stevens <em>6:04</em>
+                        </p>
+                        <p>
+                            <img src="images/rock in gods shoe.jpeg" width="80" alt="The earth in a brown oxford shoe">
+                            <strong> Rocks in God's Shoe</strong> Sushi Soucy <em>2:44</em>
+                        </p>
+                        <p>
+                            <img src="images/limitations.jpg" width="80" alt="An open blue matchbook">
+                            <strong> Limitations</strong> Andre Van Drunen <em>2:49</em>
+                        </p>
+                    </div>
+                    <img src="images/fishy div.webp">
                 </div>
-                <div>
-                    <p> 
-                        <img src="images/huey lewis.webp" width="80" alt="An illustrative cover for 'Song of the Sea', featuring a selkie, her brother, and their dog.">
-                        <strong> If This Is It</strong> Huey Lewis & the News <em>3:53</em>
-                    </p>
-                    <p>
-                        <img src="images/Minnie_Ripperton_-_Come_To_My_Garden_(Spotify).png" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
-                        <strong> Les Fleurs</strong> Minnie Ripperton <em>3:19</em>
-                    </p>
-                    <p>
-                        <img src="images/fortune teller.jpeg" width="80" alt="The earth in a brown oxford shoe">
-                        <strong> Fortune Teller</strong> Lu Lagoon <em>4:00</em>
-                    </p>
-                    <p>
-                        <img src="images/DEVOTCHKA_COVER_RGB.jpg" width="80" alt="An open blue matchbook">
-                        <strong> Straight Shot</strong> DeVotchKa <em>5:22</em>
-                    </p>
+                <br>
+
+                <!its the instrumentallllls>
+                <div id="two-col">
+                    <div style="text-align: center;">
+                        <img src="images/alex lasarenko.jpeg" width="300" alt="The silhouette of a piano, a bass, and a conductors arm, labelled 'ORCHESTRAL GROOVES'" id="muzak">
+                        <h3><strong> Unhinged</strong> ~ Alexander Lasarenko <em>5:11</em> </h3>
+                        <img src="images/playbar.png">
+                    </div>
+                    <div>
+                        <p> 
+                            <img src="images/song of the sea.jpg" width="80" alt="An illustrative cover for 'Song of the Sea', featuring a selkie, her brother, and their dog.">
+                            <strong> Run</strong> Bruno Coulais <em>2:32</em>
+                        </p>
+                        <p>
+                            <img src="images/Traindragon.jpg" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
+                            <strong> New Tail</strong> John Powell <em>2:48</em>
+                        </p>
+                        <p>
+                            <img src="images/undone.jpg" width="80" alt="The earth in a brown oxford shoe">
+                            <strong> Caught in a Weird Loop</strong> Amie Doherty <em>1:25</em>
+                        </p>
+                        <p>
+                            <img src="images/alhambra.jpeg" width="80" alt="An open blue matchbook">
+                            <strong> Waltz</strong> Mother Falcon <em>3:01</em>
+                        </p>
+                    </div>
+                    <img src="images/fishy div.webp">
                 </div>
+                <br>
+
+                <!barrryyyyyyy manilow>
+                    <div id="two-col">
+                        <div style="text-align: center;">
+                            <img src="images/copacabana.jpg" width="300" alt="The silhouette of a piano, a bass, and a conductors arm, labelled 'ORCHESTRAL GROOVES'" id="nova">
+                            <h3><strong> Copacabana</strong> ~ Barry Manilow <em>3:56</em> </h3>
+                            <img src="images/playbar.png">
+                        </div>
+                        <div>
+                            <p> 
+                                <img src="images/huey lewis.webp" width="80" alt="An illustrative cover for 'Song of the Sea', featuring a selkie, her brother, and their dog.">
+                                <strong> If This Is It</strong> Huey Lewis & the News <em>3:53</em>
+                            </p>
+                            <p>
+                                <img src="images/Minnie_Ripperton_-_Come_To_My_Garden_(Spotify).png" width="80" alt="a collage of drawings, labled 'Come on and feel the ILLINOISE'">
+                                <strong> Les Fleurs</strong> Minnie Ripperton <em>3:19</em>
+                            </p>
+                            <p>
+                                <img src="images/fortune teller.jpeg" width="80" alt="The earth in a brown oxford shoe">
+                                <strong> Fortune Teller</strong> Lu Lagoon <em>4:00</em>
+                            </p>
+                            <p>
+                                <img src="images/DEVOTCHKA_COVER_RGB.jpg" width="80" alt="An open blue matchbook">
+                                <strong> Straight Shot</strong> DeVotchKa <em>5:22</em>
+                            </p>
+                        </div>
+                </div>
+           </div>
+            <img src="images/chatty comp.webp"  alt="A happy cartoon computer">
         </div>
     </body>
 </html>
