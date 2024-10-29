@@ -1,0 +1,36 @@
+
+#p2{
+    color: blueviolet;
+    background-color: antiquewhite;
+    font-size: 24px;
+}
+#p3{
+    font-weight: bold;
+    font-style: oblique;
+    color: goldenrod;
+    text-decoration: overline;
+    text-transform: capitalize;
+    text-shadow: black 0 1px;
+}
+#s1{
+    color: cornflowerblue;
+    font-style: italic;
+
+}
+#s2{
+    color: crimson;
+    font-size: 48px;
+}
+#s3{
+    text-decoration: line-through;
+    font-family: fantasy;
+    display: block;
+    color: tomato;
+    background-color: #89cff0;
+    text-align: center;
+}
+#s4{
+    font-weight: 900;
+    color: #89cff0;
+    text-align: right;
+}
