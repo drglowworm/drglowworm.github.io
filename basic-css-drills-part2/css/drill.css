@@ -42,17 +42,17 @@
 }
 
 /* Drill 13 - Write your code solution below */
+#d13-div1{
+    text-align: center;
+}
 #d13-div2{
     font-size: 12px;
-    text-align: center;
     font-weight: bold;
 }
 #d13-div3{
     font-size: 48px;
-    text-align: center;
 }
 #d13-div4{
     font-size: 24px;
-    text-align: center;
     font-style: italic;
 }
