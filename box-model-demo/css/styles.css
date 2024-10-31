@@ -1,0 +1,29 @@
+div{
+    border: 5px ridge rgb(126, 164, 234);
+    padding: 50px;
+    margin: 150px;
+    box-shadow: 0 0 50px 15px #3792c2;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    /*
+        Margins can have up to 4 values. There's 4 ways to write it 
+        using shorthand. 
+
+        Margin with 1 value applies to all 4 sides of the element.
+        Margin with 2 applies to top/bottom first, then left/right.
+        Margin with 3 is top, left/right, then bottom.
+        Margin with 4 is top, right, bottom, left. Similar to a compass.
+     */
+}
+body{
+    background-color: rgb(13, 13, 16);
+    color: ghostwhite;
+}
+p{
+    border: 9px dashed navajowhite;
+    background-color: rgb(64, 96, 97);
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 60px;
+}
