@@ -1,0 +1,39 @@
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.absolute-heading{
+    font-size: 36px;
+}
+.absolute-p{
+    font-size: 18px;
+}
+.relative-heading{
+    font-size: 5vw;
+}
+.relative-p{
+    font-size: 2.5vw;
+    font-size: clamp(12px, 2.5vw, 50vw);
+    /* clamp function is min base max, useful to create responsive w/o knocking it into the void. */
+}
+.absolute-kitty{
+    width: 350px;
+}
+.relative-kity{
+    width: .5fr;
+}
+.outer-container{
+    width: 66%;
+    border: 3px dashed orange;
+    margin: 0px auto;
+}
+.inner-container{
+    border: 3px solid dodgerblue;
+    width: 70%;
+    margin: 0px auto;
+    p, img{
+        width: 48%;
+        display: inline-block;
+    }
+}
+
