@@ -1,0 +1,86 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the assignment.
+
+    Good luck, and have fun!
+*/
+#poster-1{
+    margin: 70px 12px 0px;
+    rotate: 7deg;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/dark1.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 60%;
+        mix-blend-mode: difference;
+    }
+}
+#poster-1 img{
+    width: 80px;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+#poster-2{
+    margin: 70px 12px 0px;
+    rotate: -3deg;
+    border: 2px ridge black;
+    box-shadow: 2px 2px 8px #0e0e0e;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/dark2.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 60%;
+        mix-blend-mode: difference;
+    }
+}
+#poster-2 img{
+    width: 80px;
+    padding: 1px;
+    background-color: antiquewhite;
+    box-shadow: inset 4px 2px 8px #0e0e0e;
+}
+#poster-3{
+    margin: 70px 12px 0px;
+    rotate: 1deg;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/dark5.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 60%;
+        mix-blend-mode: difference;
+    }
+}
+#poster-3 img{
+    width: 80px;
+    padding: 4px;
+    background-color: antiquewhite;
+}
+#grafiti{
+    margin: 70px 12px 0px;
+    rotate: -6deg;
+    font-family: "Wingdings";
+    opacity: 80%;
+}
+#grafiti p{
+    font-size: 50px;
+}
