@@ -1,0 +1,80 @@
+body{
+background-color: #25221D;
+opacity: 1;
+background-image:  linear-gradient(#584236 0.9px, transparent 0.9px), linear-gradient(to right, #584236 0.9px, #25221D 0.9px);
+background-size: 18px 18px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
+}
+.pic{
+    border: 3px ridge #a5325c;
+    margin: 15px;
+    box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
+    
+}
+/* Pictures go thru a dithering, spec. CRT emulation */
+.frame{
+    background-color: #5D5A33;
+    border: 3px ridge #ADA255;
+    color: bisque;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
+}
+nav{
+    background-color: #1C120F;
+    border: 2px ridge #E9E4A4;
+    color: bisque;
+    position: sticky;
+    z-index: 1;
+    top: 3px;
+    box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+}
+/* FONT STYLING START */
+a{
+    color: #CDA143;
+}
+a:hover{
+    color: #E9E4A4;
+    
+}
+p{
+    font-family: "Playfair", serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Young Serif";
+}
+.scribble{
+    font-family: "JaneAusten";
+}
+.kev{
+    font-family: "Marker Twins";
+}
+.keith{
+    font-family: "Biro Script reduced";
+}
+.mickey{
+    font-family: "Micky Amster";
+}
+.spitz{
+    font-family: "Milkshake";
+}
+.bear{
+    font-family: "LT Delilah";
+}
+/* FONT STYLING END */
