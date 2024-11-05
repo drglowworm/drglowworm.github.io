@@ -9,6 +9,7 @@ background-size: 18px 18px;
     margin: 0px;
     padding: 0px;
 }
+/* IMAGE STYLING */
 img{
     width: 100%;
     object-fit: cover;
@@ -20,7 +21,11 @@ img{
     box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
     
 }
-/* Pictures go thru a dithering, spec. CRT emulation */
+.poke:hover{
+    transform: scale(1.05, 1.05);
+}
+/* Pictures go thru a dithering, spec. CRT emulation
+END STYLE */
 .frame{
     background-color: #5D5A33;
     border: 3px ridge #ADA255;
