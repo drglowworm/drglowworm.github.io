@@ -51,7 +51,9 @@ a{
 }
 a:hover{
     color: #E9E4A4;
-    
+}
+a:visited{
+    color: #79742d;
 }
 p{
     font-family: "Playfair", serif;
