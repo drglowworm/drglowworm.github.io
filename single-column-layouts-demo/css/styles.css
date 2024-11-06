@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: blanchedalmond;
+    color: rgb(44, 50, 50);
+}
+.single-column{
+    width: 75%;
+    max-width: 1440px;
+    min-width: 200px;
+    margin: 0px auto;
+    text-align: center;
+}
+.light-container{
+    background-color: cornflowerblue;
+    padding: 48px 0px;
+}
+.dark-container{
+    background-color: indigo;
+    color: antiquewhite;
+    padding: 48px 0px;
+}
