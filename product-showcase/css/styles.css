@@ -5,7 +5,6 @@ img{
     object-fit: cover;
     border-radius: 30px;
     width: 65%;
-    max-height: 700px;
     padding: 20px;
 }
 body{
@@ -13,7 +12,7 @@ body{
     text-align: center;
 }
 p{
-    width: 70%;
+    width: 45%;
     font-family: "Didot";
     margin: 20px auto;
     text-align: left;
