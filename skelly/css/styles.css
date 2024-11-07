@@ -87,21 +87,35 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 900;
 }
 /* FONT STYLING END */
-.radiogram ul{
+.radio-content{
     display: block;
     overflow-y:scroll;
-    padding-top: 120px;
-    width: 268px;
-    height: 210px;
-    position: relative;
-    text-align: center;
+    width: 260px;
+    height: 120px;
+    position: absolute;
+    top: 110px;
+    left: 28px;
+
 }
 .radiogram{
     height:268px;
     width: 320px; 
     background-image: url(../images/radiogram_d.png);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    text-align: center;
+    position: relative;
+}
+.taped-content{
+    display: block;
+    overflow-y:scroll;
+    width: 260px;
+    height: 120px;
+    position: absolute;
+    top: 110px;
+    left: 28px;
+
+}
+.taped{
+    height:268px;
+    width: 320px; 
+    background-image: url(../images/taped-d.png);
+    position: relative;
 }

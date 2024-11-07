@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+/* resets END */
+#two-col{
+    display: flex;
+}
+#sidebar{
+    background-color: cadetblue;
+    flex: 1;
+}
+#main{
+    background-color: antiquewhite;
+    flex: 3;
+}
