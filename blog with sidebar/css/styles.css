@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6{
 /* GRID STYLING */
 #content {
     display: grid;
-    grid-template-columns: 1fr 500px 300px 1fr;
+    grid-template-columns: 1fr 700px 300px 1fr;
     grid-template-areas: 
         ". main sidebar ."
     ;
@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6{
 .imageNpara {
     display: flex;
     margin: 15px;
+    align-items: flex-start;
     p{
         flex: 1;
     }
