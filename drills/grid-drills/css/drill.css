@@ -1,0 +1,72 @@
+/* Drill 1 - Write your code solution below */
+#container-d1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Drill 2 - Write your code solution below */
+#container-d2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Drill 3 - Write your code solution below */
+#container-d3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Drill 4 - Write your code solution below */
+#container-d4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "Two Three One"
+    ;
+}
+#d4-cell1 {
+    grid-area: One;
+}
+#d4-cell2 {
+    grid-area: Two;
+}
+#d4-cell3 {
+    grid-area: Three;
+}
+/* Drill 5 - Write your code solution below */
+#container-d5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "ein ein ein"
+        "drei zwei zwei"
+    ;
+}
+#d5-cell1 {
+    grid-area: ein;
+}
+#d5-cell2 {
+    grid-area: zwei;
+}
+#d5-cell3 {
+    grid-area: drei;
+}
+
+/* Drill 6 - Write your code solution below */
+#container-d6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "bingus boingus"
+        "beepo beepo"
+    ;
+}
+#d6-cell1 {
+    grid-area: bingus;
+}
+#d6-cell2 {
+    grid-area: boingus;
+}
+#d6-cell3 {
+    grid-area: beepo;
+}
