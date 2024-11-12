@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    background-image: url(../images/Cosmic\ Bowl\ II.png);
+    background-size: 200px;
+}
+p {
+    font-family: "rubik";
+    color: cornsilk;
+    padding: 10px;
+}
+h1, h2, h3 {
+    font-family: "fascinate";
+    color: cornsilk;
+    padding: 10px;
+}
+h4, h5, h6 {
+    font-family: "Silkscreen";
+    color: cornsilk;
+    padding: 10px;
+}
+div {
+    background-image: url(../images/pppixelate.svg);
+    background-size: 250px;
+    border: 2px ridge magenta;
+    margin: 12px;
+}
