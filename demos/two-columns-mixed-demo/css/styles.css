@@ -3,7 +3,9 @@
 }
 body{
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(../images/7144924.jpg);
+    background-size: 500px;
+    background-repeat: repeat;
 }
 #grid-layout {
     display: grid;
@@ -16,11 +18,12 @@ body{
 #tippytop {
     grid-area: tippytop;
     padding: 0px 36px;
+    background-image: linear-gradient( rgb(45, 31, 58), rgba(255,0,0,0));
     a{
         text-decoration: none;
     }
     #me {
-        color: #111;
+        color: white;
         padding: 2px;
     }
     #tube {
@@ -33,6 +36,10 @@ body{
 #side {
     grid-area: side;
     padding: 0px 24px;
+    margin-right: 20px;
+    background-color: antiquewhite;
+    opacity: 95%;
+    border-radius: 24px;
     ul {
         list-style-type: none;
         padding: 12px 0px;
@@ -40,13 +47,14 @@ body{
         border-bottom: 2px solid #aaa;
         a {
         text-decoration: none;
-        color: #111;
+        font-family: "Young Serif";
+        color: purple;
         display: block;
         padding: 12px;
         transition: background-color 0.5s, border-radius 0.5s;
         }
         a:hover {
-            background-color: #dadada;
+            background-color: rgb(252, 180, 216);
             border-radius: 6px;
         }
     }
@@ -60,9 +68,37 @@ body{
     flex: 250px;
     margin-right: 12px;
     margin-bottom: 24px;
-    .thumbnail{
-        aspect-ratio: 16 / 9;
-        background: radial-gradient(at top left, crimson, orange);
-        border-radius: 8px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.videozone:hover {
+    transform:scale(1.05, 1.05);
+    box-shadow: 3px 3px 3px black;
+}
+p {
+    font-family: "Playfair", serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Young Serif";
+}
+.videozone .thumbnail {
+    aspect-ratio: 16 / 9;
+    background: radial-gradient(at top left, magenta, orange);
+    border-radius: 8px;
+    img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 8px;
     }
+}
+h4 a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+h4 a:hover{
+    color: darkorange;
 }
