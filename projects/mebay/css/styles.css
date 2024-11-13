@@ -2,6 +2,12 @@
     box-sizing: border-box;
     margin: 0px;
 }
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px dashed cornsilk;
+}
 body {
     background-image: url(../images/Cosmic\ Bowl\ II.png);
     background-size: 200px;
@@ -23,7 +29,101 @@ h4, h5, h6 {
 }
 div {
     background-image: url(../images/pppixelate.svg);
-    background-size: 250px;
-    border: 2px ridge magenta;
+    background-size: 210px;
+    border: 4px ridge rgb(79, 83, 188);
     margin: 12px;
+    border-radius: 15px;
+}
+.holder {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-areas:
+    "sidebar pics buying"
+    ;
+    border: none;
+    background-image: none;
+}
+.sidebar {
+    grid-area: sidebar;
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+}
+.pics {
+    grid-area: pics;
+    text-align: center;
+    padding: 10px;
+    height: fit-content;
+    
+}
+.buying {
+    grid-area: buying;
+    background-image: url(../images/blackbg.svg);
+}
+.buttonzone {
+    background-image: none;
+    border: none;
+    ul {
+        list-style-type: none;
+        padding: 12px 0px;
+        margin: 0px;
+        li{
+            margin: 10px;
+            
+        }
+        a {
+        text-decoration: none;
+        font-family: "fascinate";
+        color: rgb(20, 251, 135);
+        background-color: rgb(29, 20, 50);
+        display: block;
+        padding: 12px;
+        text-align: center;
+        transition: background-color 0.5s, transform 0.5s;
+        border: 2px solid pink;
+            border-radius: 8px;
+        }
+        a:hover {
+            background-color: rgb(78, 49, 118);
+            transform: scale(1.03, 1.03);
+        }
+    }
+}
+.nav{
+    background-image: url(../images/nav.svg);
+    border: 2px ridge #c925cc;
+    color: cornsilk;
+    position: sticky;
+    z-index: 1;
+    top: 3px;
+    box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: right;
+    a{
+        background: linear-gradient(currentColor 0 0) 
+        bottom left/
+        var(--underline-width, 0%) 0.1em
+        no-repeat;
+        color: #f80;
+        display: inline-block;
+        padding: 0 .5em 0.2em;
+        text-decoration: none;
+        transition: background-size 0.5s;
+    }
+    a:hover{
+        --underline-width: 100%;
+    }
+    .navlinks{
+        border: none;
+        background-image: none;
+        display: flex;
+        
+    }
+    h1{
+        margin-right: auto;
+    }
 }
