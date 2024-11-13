@@ -9,8 +9,9 @@ img{
     border: 1px dashed cornsilk;
 }
 body {
-    background-image: url(../images/Cosmic\ Bowl\ II.png);
-    background-size: 200px;
+    background-image: url(../images/Cosmic-iii.png);
+    background-size: 600px;
+    
 }
 p {
     font-family: "rubik";
@@ -28,8 +29,8 @@ h4, h5, h6 {
     padding: 10px;
 }
 div {
-    background-image: url(../images/pppixelate.svg);
-    background-size: 210px;
+    background-image: url(../images/startbg.png);
+    background-size: 100px;
     border: 4px ridge rgb(79, 83, 188);
     margin: 12px;
     border-radius: 15px;
@@ -54,6 +55,12 @@ div {
     text-align: center;
     padding: 10px;
     height: fit-content;
+    overflow: hidden;
+    img:hover {
+        transform: scale(1.5);
+        transform-origin: 40% 20%;
+        transition: transform .5s ease;
+    }
     
 }
 .buying {
@@ -90,7 +97,7 @@ div {
     }
 }
 .nav{
-    background-image: url(../images/nav.svg);
+    background-image: url(../images/blackbg.svg);
     border: 2px ridge #c925cc;
     color: cornsilk;
     position: sticky;
@@ -99,8 +106,7 @@ div {
     box-shadow: 0.9px 1.8px 1.8px hsl(0deg 0% 0% / 0.47);
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px 5px;
     padding: 0 20px;
     align-items: right;
     a{
