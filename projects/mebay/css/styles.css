@@ -128,6 +128,7 @@ div {
         padding: 0 .5em 0.2em;
         text-decoration: none;
         transition: background-size 0.5s;
+        margin-right: auto;
     }
     a:hover {
         --underline-width: 100%;
@@ -138,7 +139,7 @@ div {
         display: flex;
         
     }
-    a {
-        margin-right: auto;
-    }
+}
+.bonus-h{
+    font-family: "silkscreen";
 }
