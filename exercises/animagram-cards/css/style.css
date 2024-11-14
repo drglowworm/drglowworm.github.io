@@ -14,7 +14,7 @@ img {
 .card-style-2{
     background-color: white;
     border-radius: 36px;
-    max-width: 358px;
+    max-width: 350px;
     margin: 16px;
     padding: 24px;
     text-align: center;
@@ -24,5 +24,11 @@ img {
     width: 200px;
 }
 .animagram-footer span{
+    font-size: x-large;
+}
+.animagram-footer {
+    justify-content: space-between;
+}
+.brand-name {
     font-size: x-large;
 }
