@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: #fbeaea;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 100vh;
+}
+p {
+    font-size: 18px;
+}
+#center-column {
+    width: 90vw;
+    max-width: 800px;
+    margin: 48px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
+}
+.card {
+    width: 350px;
+    background: linear-gradient(-50deg, #ffdbdb, #fff7f7, #ffc9c9);
+    box-shadow: 1px 2px 5px rgb(82, 82, 82);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 1s, box-shadow 1s;
+    img {
+        border-radius: 10px;
+        box-shadow: 1px 2px 2px rgb(212, 184, 184);
+    }
+    a {
+        text-decoration: none;
+        background-color: #f65154;
+        color: rgb(255, 255, 247);
+        padding: 15px;
+        margin: auto;
+        border-radius: 20px;
+        transition: background-color .5s;
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        width: 300px;
+    }
+    a:hover {
+        background-color: #ff0048;
+    }
+}
+.card:hover {
+    transform: scale(1.03, 1.03);
+    box-shadow: 2px 3px 7px rgb(82, 82, 82);
+}
+nav {
+    background: linear-gradient(-50deg, #ffdbdb, #fff7f7, #ffc9c9);
+    position: sticky;
+    z-index: 1;
+    top: 3px;
+    box-shadow: 1px 2px 5px rgb(82, 82, 82);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+    padding: 0 20px;
+    align-items: right;
+    a {
+        background: linear-gradient(currentColor 0 0) 
+        bottom left/
+        var(--underline-width, 0%) 0.1em
+        no-repeat;
+        color: #ff0048;
+        display: inline-block;
+        padding: 0 .5em 0.2em;
+        text-decoration: none;
+        transition: background-size 0.5s;
+        margin-right: auto;
+    }
+    a:hover {
+        --underline-width: 100%;
+    }
+    .navlinks {
+        border: none;
+        background-image: none;
+        display: flex;
+        
+    }
+}

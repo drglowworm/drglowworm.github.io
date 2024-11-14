@@ -1,0 +1,14 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Bulletin Board assignment.
+
+    Good luck, and have fun!
+*/
+.sticky {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 2px 3px black;
+    background-color: antiquewhite;
+}
