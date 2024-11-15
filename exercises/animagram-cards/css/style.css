@@ -22,8 +22,10 @@ img {
 .profile-pic-container img{
     border-radius: 50%;
     width: 200px;
+    margin-top: 36px;
 }
 .animagram-footer span{
+    margin-top: 36px;
     font-size: x-large;
 }
 .animagram-footer {
