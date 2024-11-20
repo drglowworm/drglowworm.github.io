@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+body {
+    margin: 0px;
+    background-color: #26221d;
+}
+h1, h2, h3{
+    font-family: "Shrikhand";
+}
+h4, h5, h6{
+    font-family: "Playfair";
+}
+p {
+    font-family: "Playfair";
+}
+html { 
+    scroll-behavior: smooth; 
+}
+/* END RESETS */
+#header {
+    background-image: 
+        linear-gradient(to left, rgba(245, 246, 252, 0.01), rgba(81, 5, 32, 0.4)),
+        url(../images/collage_creature.jpg)
+    ;
+    background-size: cover;
+    background-position: center bottom;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: auto 20px;
+    #header-content {
+        margin: 40px;
+        h1 {
+            font-size: 72px;
+            margin-bottom: 36px;
+            color: #ffeef1;
+        }
+        h4 {
+            font-size: 50px;
+            margin: 0px;
+            color: #ffeef1;
+        }
+        a {
+            font-size: 28px;
+            font-style: oblique;
+            display: inline-block;
+            color: #f9f8ca;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 36px;
+        }
+    }   
+}
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    height: 65px;
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    background-color: #07322c;
+    color: #ebe49b;
+        #home {
+            margin-right: auto;
+        }
+        a {
+            padding: 0 .5em 0.2em;
+            text-decoration: none;
+            color: #ebe49b;
+            background: linear-gradient(currentColor 0 0) 
+            bottom left/
+            var(--underline-width, 0%) 0.1em
+            no-repeat;
+            transition: background-size 0.5s;
+        }
+        a:hover {
+            --underline-width: 100%;
+        }
+    }
+#gallery {
+    columns: 2 auto;
+    width: 90%;
+    margin: 10px auto;
+}
+.card {
+    margin-right: 12px;
+    margin-bottom: 24px;
+    height: max-content;
+    background-color: #5c333d;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+.card:hover {
+    transform:scale(1.05, 1.05);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+#twocol {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "left right"
+    ;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 60px;
+}
+#left {
+    grid-area: left;
+}
+#right {
+    grid-area: right;
+    color: #f9f8ca;
+    padding: 24px;
+    margin: 24px;
+}
+#info {
+    color: #f9f8ca;
+    margin: 45px 60px;
+    text-align: center;
+}
