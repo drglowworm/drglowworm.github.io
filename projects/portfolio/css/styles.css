@@ -231,3 +231,31 @@ html {
         font-weight: 800;
     }
 }
+#cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px auto;
+}
+.bigcard {
+    background-color: #a83354;
+    color: #f9f8ca;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    margin: 30px;
+    border-radius: 20px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    a {
+        color: #f9f8ca;
+        text-decoration: none;
+    }
+    i {
+        font-size: xx-large;
+    }
+}
+.bigcard:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
