@@ -116,15 +116,118 @@ html {
 }
 #left {
     grid-area: left;
+    img {
+        border-radius: 50%;
+        width: 280px;
+        height: 280px;
+        border: 10px outset #a83354;
+    }
 }
 #right {
     grid-area: right;
     color: #f9f8ca;
     padding: 24px;
     margin: 24px;
+    a {
+        color: rgb(55, 222, 128);
+        text-decoration: none;
+        font-style: italic;
+        font-size: 24px;
+    }
 }
 #info {
     color: #f9f8ca;
-    margin: 45px 60px;
+    margin: 45px auto;
     text-align: center;
+    width: 800px;
+}
+#book{
+    transition: all 2s ease-in-out;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__window {
+    position: relative;
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+  .modal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#toucha {
+    li {
+        padding: 20px;
+        margin: 15px auto;
+        background-color: #a83354;
+        width: 400px;
+        list-style: none;
+        border-radius: 30px;
+        transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+        a {
+            color: #f9f8ca;
+            text-decoration: none;
+        }
+    }
+    li:hover {
+        transform:scale(1.05, 1.05);
+        box-shadow: 3px 3px 10px rgb(0, 0, 0);
+        background-color: #bc313f;
+    }
+}
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__window {
+    position: relative;
+    width: 650px;
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+#modal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#footer {
+    background-color: #3c0a2a;
+    color: #ebe49b;
+    height: 100px;
+    margin-bottom: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #d93545;
+        text-decoration: none;
+        font-weight: 800;
+    }
 }

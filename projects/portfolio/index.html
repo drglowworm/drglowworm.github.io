@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Home!</title>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Playfair|Shrikhand">
+        <script src="script.js"></script>
     </head>
     <body>
         <div id="nav">
@@ -18,88 +19,96 @@
                 <a href="contact.html">Contact</a>
             </span>
         </div>
+
         <div id="header">
             <div id="header-content">
                 <h1>Max Pappas</h1>
                 <h4>Illustrator and Graphic Designer</h4>
-                <a href="#">Scroll?</a>
+                <a href="#gallery">Check it Out</a>
             </div>
         </div>
+        <div id="cards" class="card">
+            <div></div>
+        </div>
+
         <div id="gallery">
             <div class="card">
                 <img 
                     src="images/Animation_FS_2027_MPappas.gif" 
-                    alt=""
+                    alt="Two people taking a smoke break in an alley"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/ArchitecturalIllustration_Final_MPappas.png" 
-                    alt=""
+                    alt="A poster of Antwerp Central Station"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/Dino_Monument_MPappas_Final.png" 
-                    alt=""
-                >
-            </div>
-            <div class="card">
-                <img 
-                    src="images/BookCoverProject_Final_V2_MPappas.png" 
-                    alt=""
+                    alt="A drawing of river canyons, in the silhoutte of an aercheopteryx skull"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/Custome_Logo_Final_MPappas-01.png" 
-                    alt=""
+                    alt="Two disembodied hand holding a cloche pouring smoke reading 'Mystic Bites'"
                     onmouseover="this.src='images/custome_logo_final_mpappas-02.png';"
                     onmouseout="this.src='images/custome_logo_final_mpappas-01.png';"
+                >
+            </div>
+            <div class="card" id="book">
+                <img 
+                    src="images/BookCoverProject_Final_V2_MPappas.png" 
+                    alt="A Dracula book cover with Jon and Mina exploring beneath the castle"
+                    onmouseover="this.src='images/Drac-Mockup.jpg';"
+                    onmouseout="this.src='images/BookCoverProject_Final_V2_MPappas.png';"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/styleguide.png" 
-                    alt=""
+                    alt="A style guide of logo proportions for Mystic Bites"
                 >
             </div>
             <div class="card">
                 <img 
-                    src="images/Animation_FS_2027_MPappas.gif" 
-                    alt=""
+                    src="images/snapsnap.jpg" 
+                    alt="An ad for a crocodile guy saying 'This boy can be acquired!'"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/MattePainting_2027_MPappas.jpg" 
-                    alt=""
+                    alt="A dimly lit lounge focused on a marble lamb statue in the center"
                 >
             </div>
             <div class="card">
                 <img 
                 src="images/DrawHouse_RPappas_Final.png" 
-                alt=""
+                alt="A simple drawing of a house just before a summer storm rolls in"
                 >
             </div>
             <div class="card">
                 <img 
                     src="images/Print_Ad_DiceBox_1_MPappas1_3 2.jpg" 
-                    alt=""
+                    alt="'Beware!' an ad for a mimick dice box"
                     >
             </div>
             <div class="card">
                 <img 
                     src="images/collage_creature.jpg"
-                    alt=""
+                    alt="A creature made out of found objects, peering around with a glowing skull"
                     >
             </div>
         </div>
-        <!-- make footer w site map
-         finish header
-         add pic of me
-         fill out the about
-         make linktree??
-         figure out how to click on a picture and open it. how does that work -->
+        
+        <div id="footer">
+            <h5>Max Pappas &copy; 2024</h5>
+            <a href="index.html"><h4>Home</h4></a>
+            <a href="contact.html"><h4>Contact</h4></a>
+            <a href="about.html"><h4>About</h4></a>
+        </div>
     </body>
 </html>
