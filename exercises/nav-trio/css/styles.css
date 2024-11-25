@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+body {
+    margin: 0px;
+}
+
+#sculptors {
+    top: 0px;
+    z-index: 1;
+    position: sticky;
+    background-color: rgb(111, 129, 80);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 9px rgb(75, 99, 92);
+    a {
+        color: antiquewhite;
+        text-decoration: none;
+        font-family: "labrada";
+        h1{
+            font-family: "miniver";
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+#angel {
+    top: 0px;
+    z-index: 1;
+    position: sticky;
+    background-color: rgb(249, 222, 204);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 9px rgb(75, 99, 92);
+    a {
+        color: rgb(46, 17, 15);
+        text-decoration: none;
+        font-family: "Fredoka";
+        h1{
+            font-family: "Miltonian Tattoo";
+        }
+        h4 {
+            font-size: 20px;
+        }
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    #button {
+        background-color: brown;
+        padding: 10px 30px;
+        color: lightgoldenrodyellow;
+        border-radius: 200px;
+        transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+    }
+    #button:hover {
+        transform: scale(1.05, 1.05);
+        background-color: rgb(185, 60, 43);
+        box-shadow: 0px 3px 4px rgb(143, 119, 90);
+        text-decoration: none;
+    }
+}
+#level1 {
+    background-color: darkcyan;
+    color: greenyellow;
+    text-align: center;
+    padding: 8px;
+    font-style: italic;
+    font-family: "smythe";
+}
+#level2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgb(48, 22, 73);
+    font-family: "smythe";
+    a {
+        color:rgb(255, 0, 166);
+        h1 {
+            font-family: "Purple Purse";
+        }
+    }
+}
+#level3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: rgb(114, 41, 119);
+    a {
+        color: rgb(127, 255, 153);
+    }
+}
