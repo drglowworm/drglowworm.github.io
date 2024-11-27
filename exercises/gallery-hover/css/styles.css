@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-image: url(../images/confetti.png);
+}
+img {
+    object-fit: cover;
+    width: 100%;
+}
+/* end resets */
+/* gal1 here */
+#gal1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px;
+}
+.card1 {
+    border: 2px dashed deeppink;
+    width: 220px;
+    height: 250px;
+    margin: 20px;
+    transition: box-shadow 0.5s, border-color 0.5s, transform 0.5s;
+    img {
+        height: 100%;
+    }
+}
+.card1:hover {
+    box-shadow: 0px 0px 20px rgb(248, 76, 248);
+    border-color: hotpink;
+    transform: scale(1.1)
+}
+#gal2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card2 {
+    position: relative;
+    border: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    img {
+        height: 200px;
+        width: 300px;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+.card2 .card-front,
+.card2 .card-back {
+    border: 3px solid black;
+    border-radius: 12px;
+}
+.card2 .card-back {
+    transform: scaleX(0);
+}
+.card2 .card-front {
+    background-image: url(../images/rock.webp);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    position: absolute;
+}
+.card2 .card-front {
+    transition: transform 0.25s 0.25s;
+}
+
+.card2 .card-back {
+    transition: transform 0.25s;
+}
+
+.card2:hover .card-front {
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+.card2:hover .card-back {
+    transform: scaleX(1);
+    transition: transform 0.25s 0.25s;
+}
+h2 {
+    color: beige;
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@keyframes wiggle {
+0% { transform: skew(0deg); }
+20% { transform: skew(0deg); }
+28% { transform: skew(8deg); }
+35% { transform: skew(-5deg); }
+38% { transform: skew(0deg); }
+45% {transform: skew(0deg); }
+80% { transform: skew(0deg); }
+85% { transform: skew(8deg); }
+95% { transform: skew(-5deg); }
+100% { transform: skew(0deg); }
+}
+
+#jello.wiggle:hover {
+  display: inline-block;
+  animation: wiggle 1s infinite;
+}
+
+#jello.wiggle {
+  animation: none;
+  width: 400px;
+}
+#gal3 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
