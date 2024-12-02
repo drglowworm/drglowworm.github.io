@@ -1,1 +1,96 @@
 /* playpen sans, shrikhand */
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+body {
+    margin: 0px;
+    background-color: rgb(235, 118, 142);
+    h1, h2, h3, h4, h5, h6, a {
+        font-family: "Shrikhand";
+    }
+    p {
+        font-family: "Playpen Sans";
+    }
+}
+/* end resets */
+nav {
+    background-color: rgb(159, 164, 26);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 6px black;
+    a {
+        text-decoration: none;
+        color: cornsilk;
+        padding: 24px;
+        display: inline-block;
+    }
+    a:hover {
+        background: rgb(33,111,220);
+        background: radial-gradient(circle, rgb(63, 78, 244) 0%, rgb(93, 87, 207) 100%);
+        cursor: pointer;
+    }
+}
+.nav {
+    position: relative;
+}
+.drop {
+    position: absolute;
+    box-shadow: 4px 6px black;
+    border: 5px solid black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, vibility 1s;
+    a {
+        background-color: dodgerblue;
+        min-width: 200px;
+        width: 100%;
+    }
+}
+.nav:hover .drop{
+    opacity: 1;
+    visibility: visible;
+}
+nav > .logo {
+    margin-right: auto;
+}
+/* end nav */
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 40px;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.pic img{
+    aspect-ratio: 1/ 1;
+    border-radius: 50%;
+    box-shadow: 4px 6px black;
+    border: 5px solid black;
+}
+.info {
+    padding: 10px 40px;
+    background-color: antiquewhite;
+    border-radius: 60px 15px;
+    box-shadow: 4px 6px black;
+    border: 5px solid black;
+    button {
+        background-color: rgb(162, 54, 132);
+        color: rgb(250, 179, 135);
+        font-family: "Playpen Sans";
+        padding: 10px 30px;
+        border: 3px solid black;
+        border-radius: 20px 5px;
+        font-weight: 800;
+        font-size: 16px;
+        transition: transform 0.5s, box-shadow 0.5s;
+    }
+    button:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 2px 3px black;
+    }
+}

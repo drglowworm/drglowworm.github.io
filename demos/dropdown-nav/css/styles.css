@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background-color: cornsilk;
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+/* end resets */
+nav {
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: azure;
+        padding: 24px;
+        display: inline-block;
+    }
+    a:hover {
+        background: rgb(33,111,220);
+        background: radial-gradient(circle, rgb(63, 78, 244) 0%, rgb(93, 87, 207) 100%);
+        cursor: pointer;
+    }
+}
+nav > .logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    height: 100%;
+}
+.Dropdown-container {
+    position: relative;
+}
+.Dropdown-menu {
+    position: absolute;
+    box-shadow: -2px 2px 5px #5558;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, vibility 1s;
+    a {
+        background-color: dodgerblue;
+        min-width: 200px;
+        width: 100%;
+    }
+}
+.Dropdown-container:hover .Dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
