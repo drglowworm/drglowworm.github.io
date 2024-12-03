@@ -8,7 +8,7 @@ img {
 }
 body {
     margin: 0px;
-    background-color: rgb(235, 118, 142);
+    background-color: rgb(108, 95, 183);
     h1, h2, h3, h4, h5, h6, a {
         font-family: "Shrikhand";
     }
@@ -17,11 +17,11 @@ body {
     }
 }
 /* end resets */
-nav {
+nav .bonus {
     background-color: rgb(159, 164, 26);
     display: flex;
     align-items: center;
-    box-shadow: 0px 6px black;
+    border-bottom: 6px solid black;
     a {
         text-decoration: none;
         color: cornsilk;
@@ -31,7 +31,6 @@ nav {
     a:hover {
         background: rgb(33,111,220);
         background: radial-gradient(circle, rgb(63, 78, 244) 0%, rgb(93, 87, 207) 100%);
-        cursor: pointer;
     }
 }
 .nav {
@@ -54,23 +53,26 @@ nav {
     opacity: 1;
     visibility: visible;
 }
-nav > .logo {
+.logo {
     margin-right: auto;
 }
 /* end nav */
 .card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin: 40px;
-    column-gap: 50px;
-    align-items: center;
-    justify-content: center;
+    margin: 40px auto;
+    max-width: 1200px;
+
+}
+.pic {
+    text-align: center;
+    margin-bottom: 10px;
 }
 .pic img{
-    aspect-ratio: 1/ 1;
+    aspect-ratio: 1/1;
     border-radius: 50%;
     box-shadow: 4px 6px black;
     border: 5px solid black;
+    height: 45%;
+    width: 45%;
 }
 .info {
     padding: 10px 40px;
@@ -80,7 +82,7 @@ nav > .logo {
     border: 5px solid black;
     button {
         background-color: rgb(162, 54, 132);
-        color: rgb(250, 179, 135);
+        color: cornsilk;
         font-family: "Playpen Sans";
         padding: 10px 30px;
         border: 3px solid black;
@@ -92,5 +94,120 @@ nav > .logo {
     button:hover {
         transform: scale(1.1, 1.1);
         box-shadow: 2px 3px black;
+    }
+    h4 {
+        margin-bottom: -10px;
+        font-size: 18px;
+    }
+    ul {
+        list-style: disc;
+        margin-bottom: 30px;
+        li {
+            font-family: "Playpen sans";
+        }
+    }
+}
+/* end cards */
+#hero {
+    height: 91vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(169, 93, 21);
+    padding: 20px 40px;
+    color: cornsilk;
+    h1 {
+        margin-top: -10px;
+        margin-bottom: 60px;
+    }
+    h3 {
+        margin-top: 200px;
+        font-family: "Playpen sans";
+    }
+    a {
+        color: rgb(219, 250, 128);
+        background-color: rgb(87, 24, 98);
+        display: inline-block;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        background: linear-gradient(currentColor 0 0) 
+        bottom left/
+        var(--underline-width, 0%) 0.1em
+        no-repeat;
+        transition: background-size 0.5s;
+    }
+    a:hover {
+        --underline-width: 100%;
+    }
+}
+#img > img{
+    height: 100%;
+}
+/* end home */
+@media screen and (max-width: 768px) {
+    .pic img{
+       min-height: 310px;
+       min-width: 310px;
+    }
+    .info {
+        margin: auto 10px;
+    }
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+    #hero {
+        grid-template-columns: 1fr;
+    }
+    #hcon {
+       h3{ 
+           margin-top: 20px;
+       }
+       h1 {
+        margin-bottom: 10px;
+       }
+    }
+    .bonus {
+        margin: 0px auto;
+    }
+    .helpme {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        border-bottom: 6px solid black;
+        left: 0px;
+        width: 100vw;
+        top: 100%;
+        justify-content: space-between;
+        transition: opacity 0.5s, vibility 1s;
+        a {
+            background-color: rgb(159, 164, 26);
+            text-align: center;
+            flex: 1;
+        }
+    }
+    .bonus:hover .helpme{
+        opacity: 1;
+        visibility: visible;
+    }
+    .logo {
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+
+    }
+    .nav {
+        flex: 1;
+        a {
+            width: 100%;
+        }
     }
 }
