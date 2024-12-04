@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    font-family: "Playfair";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface";
+}
+/* end resets */
+
+/* NAV START */
+/* NAV END */
+
+/* FOOTER START */
+/* FOOTER END */
+
+/* HERO START */
+/* HERO END */
+
+/* CARD START */
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    
+}
+.card {
+    text-align: center;
+    background-color: #c6b6b6;
+}
+/* CARD END */

@@ -197,7 +197,7 @@ nav .bonus {
             flex: 1;
         }
     }
-    .bonus:hover, .bonus:active .helpme{
+    .bonus:hover, .bonus:active, .helpme{
         opacity: 1;
         visibility: visible;
     }
