@@ -56,6 +56,9 @@ nav .bonus {
 .logo {
     margin-right: auto;
 }
+.helpme {
+    display: flex;
+}
 /* end nav */
 .card {
     margin: 40px auto;
