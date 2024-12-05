@@ -4,6 +4,7 @@
 body {
     margin: 0px;
     scroll-behavior: smooth;
+    background-color: #231F20;
 }
 img {
     width: 100%;
@@ -11,19 +12,93 @@ img {
 }
 p {
     font-family: "Playfair";
+    color: #FFF5CD;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Abril Fatface";
+    color: #FFF5CD;
+}
+a {
+    color: #E63926;
+    background-color: #231F20;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: none;
+    background: linear-gradient(currentColor 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.1em
+    no-repeat;
+    transition: background-size 0.5s;
+}
+a:hover {
+    --underline-width: 100%;
 }
 /* end resets */
 
 /* NAV START */
+nav {
+    background-color: #065E4D;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 58px;
+    object-fit: contain;
+}
+.logo {
+    margin-right: auto;
+}
+.links {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    background-color: #FDBE54;
+}
 /* NAV END */
 
 /* FOOTER START */
+footer {
+    margin: 90px auto 20px;
+    text-align: center;
+    img {
+        height: 30px;
+        object-fit: contain;
+    }
+}
 /* FOOTER END */
 
 /* HERO START */
+#hero {
+    background-image: 
+        linear-gradient(to top, rgba(54, 19, 25, 0.104), rgba(35, 31, 32, .5)),
+        url(../images/boiger.png)
+    ;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    h1 {
+        margin-top: 0px;
+        font-size: 48px;
+    }
+    h4 {
+        font-size: 28px;
+        margin-top: 0px;
+    }
+    a {
+        font-size: 32px;
+    }
+}
+
 /* HERO END */
 
 /* CARD START */
@@ -31,10 +106,141 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
+    margin: 25px 10%;
     
 }
 .card {
     text-align: center;
-    background-color: #c6b6b6;
+    background-color: #065E4D;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    img {
+        border-radius: 20px 20px 0px 0px;
+        height: 60vh;
+    }
+    a {
+        background-color: #231F20;
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    h5 {
+        padding: 20px;
+    }
 }
 /* CARD END */
+
+/* MENU START */
+#ft {
+    position: relative;
+    border: 0px;
+    padding: 0px;
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    img {
+        height: 700px;
+        width: 500px;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+#ft .front,
+#ft .back {
+    border-radius: 12px;
+}
+#ft .back {
+    transform: scaleX(0);
+}
+#ft .front {
+    background-image: url(../images/joker.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    position: absolute;
+}
+#ft .front {
+    transition: transform 0.25s 0.25s;
+}
+
+#ft .back {
+    transition: transform 0.25s;
+}
+
+#ft:hover .front {
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+#ft:hover .back {
+    transform: scaleX(1);
+    transition: transform 0.25s 0.25s;
+}
+.twocol {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: auto 20%;
+    justify-content: center;
+    align-items: center;
+}
+#des {
+    background-color: #231F20;
+    padding: 24px;
+    border-radius: 15px;
+    border: 4px solid #E63926;
+    h3 {
+        color: #C4E2BD;
+        font-size: 24px;
+    }
+    h2 {
+        color: #FDBE54;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+.menu {
+    display: flex;
+    column-gap: 24px;
+    margin: auto 10%;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.menucard {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    background-color: #065E4D;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px dashed #C4E2BD;
+    transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+.menucard:hover {
+    background-color: #0d6b66;
+    box-shadow: 0px 0px 15px #24ebb3;
+    color: #fffbec;
+}
+#containing {
+    text-align: center;
+    color: #C4E2BD;
+}
+#menupage {
+    padding-bottom: 20px;
+    background-color: #231F20;
+opacity: 1;
+background-image:  repeating-linear-gradient(45deg, #3e3737 25%, transparent 25%, transparent 75%, #3e3737 75%, #3e3737), repeating-linear-gradient(45deg, #3e3737 25%, #231F20 25%, #231F20 75%, #3e3737 75%, #3e3737);
+background-position: 0 0, 40px 40px;
+background-size: 80px 80px;
+}
+/* MENU END */
