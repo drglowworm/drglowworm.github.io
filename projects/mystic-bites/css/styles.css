@@ -73,18 +73,11 @@ footer {
 
 /* HERO START */
 #hero {
-    background-image: 
-        linear-gradient(to top, rgba(54, 19, 25, 0.104), rgba(35, 31, 32, .5)),
-        url(../images/boiger.png)
-    ;
     height: 70vh;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
     text-align: center;
     h1 {
         margin-top: 0px;
@@ -97,8 +90,23 @@ footer {
     a {
         font-size: 32px;
     }
+    #pic {
+        position: absolute;
+        opacity: 0.6;
+        z-index: -1;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        animation: heroscroll linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+    }
 }
-
+@keyframes heroscroll {
+    to {opacity: 0; scale: 1.5;}
+}
 /* HERO END */
 
 /* CARD START */
@@ -238,9 +246,54 @@ footer {
 #menupage {
     padding-bottom: 20px;
     background-color: #231F20;
-opacity: 1;
-background-image:  repeating-linear-gradient(45deg, #3e3737 25%, transparent 25%, transparent 75%, #3e3737 75%, #3e3737), repeating-linear-gradient(45deg, #3e3737 25%, #231F20 25%, #231F20 75%, #3e3737 75%, #3e3737);
-background-position: 0 0, 40px 40px;
-background-size: 80px 80px;
+    opacity: 1;
+    background-image:  repeating-linear-gradient(45deg, #3e3737 25%, transparent 25%, transparent 75%, #3e3737 75%, #3e3737), repeating-linear-gradient(45deg, #3e3737 25%, #231F20 25%, #231F20 75%, #3e3737 75%, #3e3737);
+    background-position: 0 0, 40px 40px;
+    background-size: 80px 80px;
 }
 /* MENU END */
+
+/* media query start */
+@media screen and (max-width:800px) {
+    nav {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .logo {
+        margin-right: 0%;
+    }
+    .links {
+        width: 100%;
+        justify-content: center;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .card h3{
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    #ft {
+        width: 300px;
+        height: 400px;
+        img {
+            height: 400px;
+            width: 300px;
+        }
+    }
+    .twocol {
+        grid-template-columns: 1fr;
+    }
+    #des {
+        margin: 5px;
+        text-align: center;
+    }
+    .menu {
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+    .menucard {
+        max-width: 400px;
+    }
+}
