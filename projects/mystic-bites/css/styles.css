@@ -41,19 +41,19 @@ a:hover {
 /* NAV START */
 nav {
     background-color: #065E4D;
-    height: 64px;
+    height: 100px;
     display: flex;
     align-items: center;
 }
 .logo img {
-    height: 58px;
+    height: 85px;
     object-fit: contain;
 }
 .logo {
     margin-right: auto;
 }
 .links {
-    height: 64px;
+    height: 100px;
     display: flex;
     align-items: center;
     background-color: #FDBE54;
@@ -89,9 +89,11 @@ footer {
     }
     a {
         font-size: 32px;
+        margin: 0px auto;
     }
     #pic {
         position: absolute;
+        box-shadow: inset 0px 0px 40px 100px #231F20;
         opacity: 0.6;
         z-index: -1;
         margin: 0px;
@@ -205,9 +207,10 @@ footer {
     }
     h2 {
         color: #FDBE54;
+        font-size: 32px;
     }
     p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 .menu {
@@ -247,10 +250,10 @@ footer {
     padding-bottom: 20px;
     background-color: #231F20;
     opacity: 1;
-    background-image:  repeating-linear-gradient(45deg, #3e3737 25%, transparent 25%, transparent 75%, #3e3737 75%, #3e3737), repeating-linear-gradient(45deg, #3e3737 25%, #231F20 25%, #231F20 75%, #3e3737 75%, #3e3737);
-    background-position: 0 0, 40px 40px;
-    background-size: 80px 80px;
+    background-image: url(../images/tile.png);
+    background-size: 400px 400px;
 }
+
 /* MENU END */
 
 /* media query start */
