@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    background: rgb(28, 39, 137);
+    background-image: url(../images/lightleak.jpg);
+    background-blend-mode: multiply;
+    color: azure;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+p {
+    font-family: "Outfit";
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bowlby One SC";
+}
+/* end resets */
+main {
+    margin: auto 10%;
+    text-align: center;
+}
+#vsgrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "jaguars vs ravens"
+    ;
+    align-items: flex-start;
+    justify-content: center;
+}
+#jaguars {
+    grid-area: jaguars;
+    font-size: 48px;
+}
+#vs {
+    grid-area: vs;
+    text-align: center;
+    font-size: 36px;
+   margin-top: 100px;
+}
+#ravens {
+    grid-area: ravens;
+    font-size: 48px;
+}
+#jaguars img, #ravens img{
+    background-color: rgb(14, 13, 13);
+    border-radius: 5px;
+    box-shadow: 0px 0px 60px 5px black;
+    height: 50vh;
+    object-fit: contain;
+    padding: 10px;
+    background-image: url(../images/crunchy.png);
+    background-blend-mode: color-dodge;
+}
+#header {
+    background: rgb(0,103,120);
+    background: linear-gradient(0deg, rgba(0,103,120,1) 0%, rgba(36,23,115,1) 100%);
+    box-shadow: 0px 0px 100px 100px rgb(0,103,120);
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding: 80px auto;
+    margin-bottom: 100px;
+    h1 {
+        margin: -10px;
+        font-size: 64px;
+    }
+    h2 {
+        margin-top: 10px;
+    }
+    h4 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-family: "Outfit";
+        font-size: 24px;
+        font-style: oblique;
+    }
+}
+#buttons a {
+    display: inline-block;
+    background-color: rgb(214, 166, 44);
+    padding: 10px 40px;
+    margin: auto 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-family: "Outfit";
+    text-decoration: none;
+    font-size: 28px;
+    background-image: url(../images/crunchy.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+#buttons a:hover {
+    transform: scale(1.2);
+    background-color: rgb(238, 174, 46);
+    box-shadow: 0px 0px 20px rgb(150, 12, 118);
+}
+#rsvpzone h5, #rsvpzone h6 {
+    font-family: "Outfit";
+    font-size: large;
+    font-style: oblique;
+}
+/* media queries begin */
+@media screen and (max-width: 1000px)
+{
+    #vsgrid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        #vs{
+            margin-top: 10px;
+        }
+        #jaguars {
+            font-size: 28px;
+            margin-bottom: -40px;
+        }
+        #ravens {
+            font-size: 28px;
+        }
+    }
+    #buttons a {
+        font-size: 18px;
+        padding: 30px 5px;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    #header h1 {
+        font-size: 36px;
+    }
+    #header h4 {
+        font-size: 20px;
+    }
+}
