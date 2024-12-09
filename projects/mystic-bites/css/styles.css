@@ -90,11 +90,12 @@ footer {
     a {
         font-size: 32px;
         margin: 0px auto;
+        background-color: #231F20;
     }
     #pic {
         position: absolute;
-        box-shadow: inset 0px 0px 40px 100px #231F20;
-        opacity: 0.6;
+        overflow-x: hidden;
+        opacity: 0.5;
         z-index: -1;
         margin: 0px;
         padding: 0px;
@@ -122,7 +123,7 @@ footer {
 .card {
     text-align: center;
     background-color: #065E4D;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     border-radius: 20px;
     img {
         border-radius: 20px 20px 0px 0px;
