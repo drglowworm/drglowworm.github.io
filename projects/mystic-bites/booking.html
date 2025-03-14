@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair">
+        <script src=script.js></script>
+    </head>
+    <body>
+        <nav>
+            <span class='logo'>
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </span>
+            <div class="links">
+                <a href="menu.html">Menu</a>
+                <a href="booking.html">Booking</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">F.A.Q.</a>
+            </div>
+        </nav>
+        <main id="booking-content">
+            <h1>Booking</h1>
+            <form action="/my-handling-form-page" method="post">
+                <p>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name" />
+                </p>
+                <p>
+                  <label for="mail">Email:</label>
+                  <input type="email" id="mail" name="user_email" />
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="number">
+                </p>
+                <p>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message">Please specify party amount.</textarea>
+                </p>
+                <p>
+                    <label for="additional"> Additional: </label>
+                    <textarea name="additional" id="additional"></textarea>
+                </p>
+                <p class="button">
+                    <a href="images/joker.png">Submit</a>
+                  </p>
+              </form>
+        </main>
+    </body>
+</html>
